@@ -4,7 +4,7 @@ This is the short guide to share with a teammate. The complete installation, con
 
 ## What the project owner gives you
 
-- access to the private GitHub repository;
+- the public GitHub repository URL;
 - access to the approved Airtable Base;
 - the approved Base, table, and view names or IDs;
 - the allowed names for the `Project` field;
@@ -26,7 +26,7 @@ Never commit or share `.env`.
 ## One-time setup
 
 1. Install Python 3.12 and Google Chrome.
-2. Clone the private repository or download its trusted ZIP.
+2. Clone the public repository or download its ZIP.
 3. Create `.venv` and install `requirements.txt` by following the operating-system instructions in the README.
 4. Copy `.env.example` to `.env` and add your own credentials.
 5. Run `python -m pytest -q`.

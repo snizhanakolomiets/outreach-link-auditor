@@ -21,7 +21,7 @@ For one record, use menu option `3` without writes or option `4` with writes. Yo
 
 Give every teammate:
 
-- access to the private GitHub repository;
+- the public GitHub repository URL;
 - access to the correct Airtable Base;
 - the approved Airtable Base, table, and view names or IDs;
 - the required Airtable field names;
@@ -69,7 +69,7 @@ The application does not intentionally send:
 - macOS or Windows;
 - Python 3.12;
 - Google Chrome for the optional browser fallback;
-- access to the private GitHub repository or a trusted ZIP copy;
+- access to the public GitHub repository or a trusted ZIP copy;
 - an OpenAI API key with available API balance;
 - an Airtable Personal Access Token with access to the intended Base.
 
@@ -92,7 +92,7 @@ If the command is not found, close and reopen Terminal after installation.
 Preferred method:
 
 ```bash
-git clone YOUR_PRIVATE_GITHUB_REPOSITORY_URL
+git clone https://github.com/snizhanakolomiets/outreach-link-auditor.git
 cd outreach-link-auditor
 ```
 
@@ -153,7 +153,7 @@ py -3.12 --version
 With Git:
 
 ```powershell
-git clone YOUR_PRIVATE_GITHUB_REPOSITORY_URL
+git clone https://github.com/snizhanakolomiets/outreach-link-auditor.git
 cd outreach-link-auditor
 ```
 
@@ -477,7 +477,8 @@ Run tests from the repository folder only. Do not run one command from a parent 
 
 ## Security rules
 
-- Keep the GitHub repository private because it contains internal project profiles and workflow details.
+- This repository is public. Keep real client profiles, Airtable configuration, credentials, and internal workflow data only in ignored local files such as `config/*.private.json` and `.env`.
+- Before every push, confirm that tracked configuration contains fictional examples only.
 - Never commit `.env`.
 - Never share API keys in chat, screenshots, tickets, or documentation.
 - Give Airtable tokens the minimum required scopes and Base access.
