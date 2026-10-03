@@ -1,0 +1,54 @@
+{
+  "skip_outbound_source_domains": ["your-company.example"],
+  "profiles": [
+    {
+      "canonical_id": "example-saas",
+      "name": "Example SaaS",
+      "aliases": ["Demo Software", "Example SaaS"],
+      "niches": ["Workflow Automation", "Business Software", "Productivity"],
+      "description": "A fictional software company used only to demonstrate how a project profile is configured.",
+      "strong_topics": [
+        "workflow automation",
+        "business software",
+        "team productivity",
+        "process optimization"
+      ],
+      "weak_topics": [
+        "consumer entertainment",
+        "unrelated lifestyle content",
+        "general news"
+      ],
+      "special_constraints": [
+        "Replace this fictional profile with an approved real project before production use."
+      ]
+    },
+    {
+      "canonical_id": "example-agency",
+      "name": "Example Agency",
+      "aliases": ["Demo Agency", "Example Agency"],
+      "niches": ["Performance Marketing", "Paid Media", "Creative Strategy"],
+      "description": "A fictional marketing agency used only to demonstrate multi-project relevance rules.",
+      "strong_topics": [
+        "performance marketing",
+        "paid media",
+        "creative strategy",
+        "conversion optimization"
+      ],
+      "weak_topics": [
+        "unrelated software development",
+        "consumer entertainment",
+        "general news"
+      ]
+    }
+  ],
+  "disambiguation": [
+    {
+      "signals": "Workflow automation, productivity, and business software",
+      "project": "example-saas"
+    },
+    {
+      "signals": "Paid media, campaign performance, and creative strategy",
+      "project": "example-agency"
+    }
+  ]
+}

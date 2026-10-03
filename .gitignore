@@ -1,0 +1,16 @@
+.env
+.DS_Store
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+*.py[cod]
+*.sqlite
+*.sqlite3
+*.db
+*.log
+cache/
+output/
+dist/
+config/*.private.json
